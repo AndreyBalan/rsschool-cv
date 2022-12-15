@@ -61,7 +61,7 @@ body {
 }
 
 .about {
-	padding: 80px 0;
+	padding: 60px 0;
 	border-bottom: 5px solid #ADACAC;
 }
 
@@ -130,6 +130,26 @@ body {
 	width: 600px;
 }
 
+.about__text {
+	position: relative;
+}
+
+.about__text:before, .about__text:after {
+	position: absolute;
+	font-size: 20px;
+	color:#FF0000;
+}
+
+.about__text:before {
+	content: "<";
+	margin-left: -11px;
+}
+
+.about__text:after {
+	content: "/>";
+
+}
+
 .about__summary p {
 	margin-top: 10px;
 	line-height: 30px;
@@ -160,9 +180,124 @@ body {
 .wrapper_info {
 	display: flex;
 	justify-content: space-between;
-	padding: 40px 0;
+	margin-top: 40px;
 }
 
 .about__summary {
 	text-align: center;
+}
+
+.about__code {
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border: 1px solid #ADACAC;
+	padding: 10px;
+}
+
+pre {
+	width: 600px;
+	margin: 0 auto;
+}
+
+/* skills section */
+.skills {
+	padding: 50px 0;
+}
+
+.wrapper_skills {
+	margin-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 20px;
+}
+
+@property --rotate {
+	syntax: "<angle>";
+	initial-value: 132deg;
+	inherits: false;
+}
+
+
+.card {
+	background: #191c29;
+	width: 200px;
+	height: 200px;
+	padding: 3px;
+	position: relative;
+	border-radius: 6px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	font-size: 1.5em;
+	color: rgb(88 199 250 / 0%);
+	cursor: pointer;
+	font-family: cursive;
+}
+
+.card:hover {
+	color: #FF0000;
+	transition: color 1s;
+}
+.card:hover:before, .card:hover:after {
+	animation: none;
+	opacity: 0;
+}
+
+.card i {
+	font-size: 50px;
+}
+
+.card::before {
+	content: "";
+	width: 104%;
+	height: 102%;
+	border-radius: 8px;
+	background-image: linear-gradient(
+	var(--rotate)
+	, #ff5d5d, #e33c3c 43%, #c20000);
+	position: absolute;
+	z-index: -1;
+	top: -1%;
+	left: -2%;
+	animation: spin 2.5s linear infinite;
+}
+
+.card::after {
+	position: absolute;
+	content: "";
+	top: calc(var(--card-height) / 6);
+	left: 0;
+	right: 0;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	transform: scale(0.8);
+	filter: blur(calc(var(--card-height) / 6));
+	background-image: linear-gradient(
+	var(--rotate)
+	, #5ddcff, #3c67e3 43%, #4e00c2);
+	opacity: 1;
+	transition: opacity .5s;
+	animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+	--rotate: 0deg;
+	}
+	100% {
+	--rotate: 360deg;
+	}
+}
+
+a {
+	color: #212534;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: bold;
+	margin-top: 2rem;
 }
