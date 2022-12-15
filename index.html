@@ -5,9 +5,246 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>rs school</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/834a620345.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>Andrew Balan</h1>
+	<header class="header">
+		<div class="container">
+			<nav class="header__nav">
+				<ul class="list list_header">
+					<li><a href="#about">About</a></li>
+					<li><a href="#contacts">Contacts</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#code">Code</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#education">Education</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section class="about" id="about">
+			<div class="container">
+				<div class="wrapper wrapper_about">
+					<div class="about__img">
+						<img src="assets/img/main_photo.jpg" alt="Andrew photo">
+					</div>
+					<div class="about__info">
+						<h1 class="about__heading">
+							Andrew Balan
+						</h1>
+						<h3 class="about__subheading">
+							Junior Frontend Developer
+						</h3>
+					</div>
+				</div>
+				<div class="wrapper wrapper_info">
+					<div class="about__summary">
+						<h3 class="title title_summary">
+							Summary
+						</h3>
+						<p class="about__text">
+							Hello. I am a front-end developer from Ukraine. Now I am in the process of studying and soon I want to find my first job in this field.
+						</p>
+						<p class="about__text">
+							I really enjoy working remotely. I am a disciplined, motivated and positive person who is so lacking in your team :)
+						</p>
+						<p class="about__text">
+							So far, I have no commercial experience, but I plan to improve this in the near future.
+						</p>
+						<p class="about__text">
+							Web development is very interesting for me. I enjoy learning new technologies and improving myself as a developer.
+						</p>
+					</div>
+					<div class="about__contacts" id="contacts">
+						<h3 class="title title_contacts">
+							Contacts
+						</h3>
+						<ul class="list list_about">
+							<li>
+								<i class="fa-solid fa-location-dot"></i>
+								Location:
+								<a href="https://goo.gl/maps/6Vxw356ZKsVGYPLVA" target="_blank">Vinnytsia, Ukraine</a>
+							</li>
+							<li>
+								<i class="fa-regular fa-envelope"></i>
+								Email:
+								<a href="mailto:balan.andrey.93@gmail.com" target="_blank">
+									balan.andrey.93@gmail.com
+								</a>
+							</li>
+							<li>
+								<i class="fa-brands fa-telegram"></i>
+								Telegram:
+								<a href="https://t.me/AndriiBalan" target="_blank">@AndriiBalan</a>
+							</li>
+							<li>
+								<i class="fa-brands fa-github"></i>
+								Github:
+								<a href="https://github.com/andreyBalan" target="_blank">https://github.com/andreybalan</a>
+							</li>
+							<li>
+								<i class="fa-brands fa-discord"></i>
+								Discord:
+								<a href="https://discord.com/users/krauzerko#55520" target="_blank">Krauzerko#55520</a>
+							</li>
+							<li>
+								<i class="fa-brands fa-linkedin"></i>
+								LinkedIn:
+								<a href="https://www.linkedin.com/in/andrii-balan-523422126/" target="_blank">Andrii Balan</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="about__code" id="code">
+				<h3 class="title title_code">
+					Code Example
+				</h3>
+				<pre>
+<code>function doubleChar(str) {
+    let word = '';
+  for (let i = 0; i < str.length; i++){
+    word = word + str[i] + str[i];
+  };
+  return word;
+};</code>
+				</pre>
+			</div>
+		</section>
+		<section class="skills" id="skills">
+			<h3 class="title title_skills">
+				Skills
+			</h3>
+			<div class="container">
+				<div class="wrapper wrapper_skills">
+					<div class="card">
+						<i class="fa-brands fa-html5"></i>
+					</div>
+					<div class="card">
+						<i class="fa-brands fa-css3-alt"></i>
+					</div>
+					<div class="card">
+						<i class="fa-brands fa-js"></i>
+					</div>
+					<div class="card">
+						<i class="fa-brands fa-sass"></i>
+					</div>
+					<div class="card">
+						<i class="fa-brands fa-gulp"></i>
+					</div>
+					<div class="card">
+						<i class="fa-brands fa-figma"></i>
+					</div>
+					<div class="card">
+						<i class="fa-brands fa-git-alt"></i>
+					</div>
+					<div class="card">
+						<i class="fa-brands fa-bootstrap"></i>
+					</div>
+					<div class="card">
+						<i class="fa-brands fa-github"></i>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="projects" id="projects">
+			<h3 class="title title_projects">
+				Projects
+			</h3>
+			<div class="container">
+				<div class="projects__wrapper">
+					<div class="projects__item">
+						<a href="https://andreybalan.github.io/tuotown/" target="_blank">
+							<img src="assets/projects/tuotown.png" alt="TuoTown">
+						</a>
+					</div>
+					<div class="projects__item">
+						<a href="https://andreybalan.github.io/california/" target="_blank">
+							<img src="assets/projects/california.png" alt="California">
+						</a>
+					</div>
+					<div class="projects__item">
+						<a href="https://andreybalan.github.io/dudeShape" target="_blank">
+							<img src="assets/projects/dudeshape.png" alt="DudeShape">
+						</a>
+					</div>
+					<div class="projects__item">
+						<a href="https://andreybalan.github.io/pulse/" target="_blank">
+							<img src="assets/projects/pulse.png" alt="Pulse">
+						</a>
+					</div>
+					<div class="projects__item">
+						<a href="https://andreybalan.github.io/monde" target="_blank">
+							<img src="assets/projects/monde.png" alt="Monde">
+						</a>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<section class="other" id="education">
+			<div class="container">
+				<div class="other__wrapper">
+					<div class="other__education">
+						<h3 class="title title_education">
+							Education
+						</h3>
+						<ul class="list list_education">
+							<li>
+								<i class="fa-solid fa-building-columns"></i>
+								<span>KYIV NATIONAL UNIVERSITY OF TRADE AND ECONOMICS</span> 
+							</li>
+							<li>
+								<i class="fa-solid fa-graduation-cap"></i>
+								<span>SkillUp</span> | IT School
+								QA courses | Kyiv (2017)
+							</li>
+							<li>
+								<i class="fa-solid fa-graduation-cap"></i>
+								<span>EasyCode IT School </span> |
+								Web development courses (HTML/CSS) / Online (2019)
+							</li>
+							<li>
+								<i class="fa-solid fa-graduation-cap"></i>
+								<span>Udemy</span> | 
+								Front-End + Java Script / Online (2022 - ...)
+							</li>
+							<li>
+								<i class="fa-solid fa-graduation-cap"></i>
+								<span>The Rolling Scopes School</span> | JS / FRONT-END (2022 - ...) 
+							</li>
+						</ul>
+					</div>
+					<div class="other__languages">
+						<h3 class="title title_languages">
+							Languages
+						</h3>
+						<ul class="list">
+							<li><span>English:</span> Intermediate</li>
+							<li><span>Ukrainian:</span> Native</li>
+							<li><span>Russian:</span> Fluent</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__logo">
+					<a href="https://rs.school/js/" target="_blank">
+						<img src="assets/logo/rss.svg" alt="rs school logo">
+					</a>
+				</div>
+				<div class="footer__author">
+					created by <a href="https://github.com/andreybalan" target="_blank">Andrew Balan</a>
+					© 2022
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
