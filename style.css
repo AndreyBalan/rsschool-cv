@@ -31,6 +31,36 @@ body {
 	margin: 0 auto;
 }
 
+/* standart ul */
+
+.list i {
+	width: 20px;
+	margin-right: 5px;
+}
+
+.list {
+	list-style: none;
+}
+
+.list li {
+	margin-top: 15px;
+}
+
+.list a {
+	color: #fff;
+}
+
+.list span {
+	color: #fff;
+}
+
+.list a:hover {
+	color: #FF0000;
+	transition: .3s;
+}
+
+/* standart ul end */
+
 .header {
 	height: 70px;
 	background: #272727;
@@ -42,6 +72,11 @@ body {
 	width: 700px;
 	display: flex;
 	justify-content: space-between;
+	margin-top: 0;
+}
+
+.list_header li {
+	margin-top: 0;
 }
 
 .header__nav li {
@@ -154,32 +189,6 @@ body {
 .about__summary p {
 	margin-top: 10px;
 	line-height: 30px;
-}
-
-.list i {
-	width: 20px;
-	margin-right: 5px;
-}
-
-.list {
-	list-style: none;
-}
-
-.list li {
-	margin-top: 15px;
-}
-
-.list a {
-	color: #fff;
-}
-
-.list span {
-	color: #fff;
-}
-
-.list a:hover {
-	color: #FF0000;
-	transition: .3s;
 }
 
 .wrapper_info {
